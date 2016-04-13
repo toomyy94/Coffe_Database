@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B1F7F958-6015-4F4D-A7BD-B1CBDD18E42A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Gestao_Cafe.My.MyApplication</StartupObject>
+    <RootNamespace>Gestao_Cafe</RootNamespace>
+    <AssemblyName>Gestao_Cafe</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Gestao_Cafe.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Gestao_Cafe.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\..\..\BD\Prática\Trabalho_prático\Projecto.Designer.vb">
+      <DependentUpon>Projecto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\..\..\BD\Prática\Trabalho_prático\Projecto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="allConnections.vb" />
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Cliente.vb" />
+    <Compile Include="ClienteMenu.Designer.vb">
+      <DependentUpon>ClienteMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras.vb" />
+    <Compile Include="Encomenda.vb" />
+    <Compile Include="Fornecedor.vb" />
+    <Compile Include="FornecedoresMenu.Designer.vb">
+      <DependentUpon>FornecedoresMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FornecedoresMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funcionario.vb" />
+    <Compile Include="MainMenu.Designer.vb">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComprasMenu.Designer.vb">
+      <DependentUpon>ComprasMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ComprasMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EncomendasMenu.Designer.vb">
+      <DependentUpon>EncomendasMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EncomendasMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produto.vb" />
+    <Compile Include="Reclamacao.vb" />
+    <Compile Include="Turno.vb" />
+    <Compile Include="TurnosMenu.Designer.vb">
+      <DependentUpon>TurnosMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TurnosMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ProdutosMenu.Designer.vb">
+      <DependentUpon>ProdutosMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProdutosMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReclamacoesMenu.Designer.vb">
+      <DependentUpon>ReclamacoesMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclamacoesMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\..\..\..\BD\Prática\Trabalho_prático\Projecto.resx">
+      <DependentUpon>Projecto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClienteMenu.resx">
+      <DependentUpon>ClienteMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FornecedoresMenu.resx">
+      <DependentUpon>FornecedoresMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComprasMenu.resx">
+      <DependentUpon>ComprasMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EncomendasMenu.resx">
+      <DependentUpon>EncomendasMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProdutosMenu.resx">
+      <DependentUpon>ProdutosMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclamacoesMenu.resx">
+      <DependentUpon>ReclamacoesMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TurnosMenu.resx">
+      <DependentUpon>TurnosMenu.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
